@@ -40,6 +40,7 @@ body {
   /* overflow: hidden; */
   display: block;
   margin-right: 10px;
+  align-items: center;
 }
 
 .nav-center {
@@ -74,14 +75,23 @@ body {
   padding-bottom: 50px;
 }
 
-.activeProfile .text {
+.activeProfile{
+  height: 10vh;
+  width: 9vw;
+}
+
+.text {
  position: relative;
+ /* width: 1rem; */
+ /* width: 15px; */
+ height: auto;
  bottom:15px;
- left:0px;
+ /* left:0px; */
  visibility: hidden;
- font-size: 15px;
+ /* font-size: 2.3vh; */
+ font-size: 1rem;
  /* font-size: 1rem; */
- padding: 0;
+ padding: 0.5rem;
 }
 
 
@@ -106,8 +116,10 @@ body {
 
 .socialIcons{
   padding: 3px;
-  width: 3%;
-  height: auto;
+  /* width: 3%;
+  height: auto; */
+  height: 5vh;
+  width: auto;
 }
 
 
@@ -204,7 +216,7 @@ body {
 
 h1{
 /* font-size: 3vw; */
-font-size: 3vw;
+font-size: 4vh;
 }
 
 p{
@@ -264,13 +276,16 @@ font-size: 55px;
     transform: none;
   }
 
-  a{
-    padding:0;
-  }
 
-  .activeProfile .text{
+  .text{
     visibility: visible;
-    font-size: 11px;
+      font-size: 0.7rem;
+      margin-left: 0.3rem;
+      margin-top: 2%;
+    /* font-size: 11px; */
+  }
+  .activeProfile{
+    margin-right: 20px;
   }
 
   .skillsIcon{
@@ -284,27 +299,27 @@ font-size: 55px;
 
 @media screen and (max-width:414px){
   
-   .activeProfile .text{
-    font-size: 8px;
-    margin-top: 2%;
-  }
+   
   /* .headerPaigeIcon{
     width: 20vw;
     height: 15vh;
   } */
-  
-  .item{
+  /* .activeProfile{
+    height: 1.2rem;
+    width: auto;
+  } */
+  /* .item{
     font-size: 1.2rem;
     height: 1.8rem;
-  }
+    padding-right: 20%;
+  } */
 }
 
 
-@media screen and (max-width:320px){
+@media screen and (max-width:350px){
   
-  .activeProfile .text{
-    font-size: 8px;
-    padding-top: 5%;
+  .text{
+    font-size: 0.5rem;
   }
   .nav-bar a {
     padding: 4px;  
