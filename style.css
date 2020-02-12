@@ -28,7 +28,7 @@ body {
   background-size: cover;
 }
 
-
+/* nabarbar */
 
 .nav-bar {
   width: 8vw;
@@ -64,6 +64,7 @@ body {
 .nav-bar a:hover {
   background-color:rgba(44, 27, 75, 0.7);
   border-radius: 10px;
+  
 }
 
 .active{
@@ -83,7 +84,15 @@ body {
  padding: 0;
 }
 
+
+.activeProfile:hover  .text {
+  visibility: visible;
+ }
+ 
+
 .skillsIcon{
+  /* height: 5vh;
+  width: auto; */
   height: 5vh;
   width: auto;
   padding-bottom:1.5vh;
@@ -95,9 +104,14 @@ body {
   padding-bottom: 0;
 }
 
-.activeProfile:hover  .text {
- visibility: visible;
+.socialIcons{
+  padding: 3px;
+  width: 3%;
+  height: auto;
 }
+
+
+/* header opening div content */
 
 .headerMeContainer{
   display: block;
@@ -113,6 +127,70 @@ body {
   /* display: inline-block; */
 }
 
+.headerPaigeIcon{
+  display: block;
+  border-radius: 50%;
+  /* width: 15vw; */
+  height: 20vh;
+    width: auto;
+  /* max-width: 205px; */
+  /* height: auto; */
+  position: relative;
+  border-width:5px;  
+  border-style:double;
+}
+
+
+/* Skills Section */
+
+.sectionHeader{
+  margin-bottom: 5vh;
+}
+
+.skillsContainer{
+  width: 80%;
+  height: auto;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* width: 100vw; */
+  /* height: 30vh; */
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 0;
+  overflow-x: hidden;
+}
+
+
+.item {
+  border-color: white;
+  border-style: none none solid solid;
+  /* display: inline; */
+  /* width: 15vw; */
+  width: auto;
+  height: 2.3rem;
+  margin: 15px;
+  margin-bottom: 3vw;
+  /* padding-top: 75px; */
+  background: none;
+  text-align: center;
+  float:bottom;
+  color: #FFF;
+  /* font-size: 1.7vw; */
+  font-size: 1.8rem;
+  /* font-size: 1.4vw; */
+  
+}
+
+.item:hover{
+  background-color: rgba(44, 27, 75, 0.7);
+  border-color: white;
+  border-style: solid solid solid solid;
+}
+
+/* content used throughout page */
+
 .centerContent{
   text-align: center;
   justify-content: center;
@@ -124,58 +202,22 @@ body {
   min-height: 100vh;
 }
 
-
-.headerPaigeIcon{
-  display: block;
-  border-radius: 50%;
-  width: 15vw;
-  max-width: 205px;
-  height: auto;
-  /* top: 10%; */
-  /* left: 40vw; */
-  
-  /* margin-top: -50px;
-  margin-left: -100px; */
-  position: relative;
-  border-width:5px;  
-  border-style:double;
- 
-  /* -webkit-animation: smooth 5s ease-in;
-  -moz-animation: smooth 5s ease-in;
-  -o-animation: smooth 5s ease-in;
-  -ms-animation: smooth 5s ease-in;
-  animation: smooth 5s ease-in-out infinite 5s; */
-  
-}
-
-/* @-webkit-keyframes smooth {
-  50% { opacity: .5;}
-  /* 0% { opacity: 0;} */
-  /* 100% { opacity: 1;}
-} */ 
-
 h1{
+/* font-size: 3vw; */
 font-size: 3vw;
 }
 
 p{
-  font-size: 1.7vw;
-}
-
-.socialIcons{
-  padding: 3px;
-  width: 3%;
-  height: auto;
-  
+  /* font-size: 1.7vw; */
+  font-size: 2.3vh;
+  margin-left: 10vw;
+  margin-right: 5%;
 }
 
 .inline{
   display:inline;
 }
 
-.sectionHeader{
-  margin-bottom: 5vh;
-}
 
 .lineDivider{
   border: 1px solid white;
@@ -184,43 +226,6 @@ p{
   margin-bottom: 10%;
 }
 
-.skillsContainer{
-  width: 100%;
-  
-  /* display: inline-flex;
-  flex-wrap: wrap; */
-  justify-content: center;
-  /* width: 100vw; */
-  /* height: 30vh; */
-  text-align: center;
-  /* padding-left: 11vw;
-  padding-right: 11vw; */
-  padding-bottom: 0;
-  overflow-x: hidden;
-}
-
-
-.item {
-  /* display: inline; */
-  width: 15vw;
-  height: 4vh;
-  margin: 15px;
-  margin-bottom: 3vw;
-  /* padding-top: 75px; */
-  background: none;
-  text-align: center;
-  float:bottom;
-  color: #FFF;
-  font-size: 1.7vw;
-  border-color: white;
-  border-style: none none solid solid;
-}
-
-.item:hover{
-  background-color: rgba(44, 27, 75, 0.7);
-  border-color: white;
-  border-style: solid solid solid solid;
-}
 
 
 
@@ -228,12 +233,13 @@ p{
 
 @media screen and (min-width:1800px){
   
-  h1{
+  /* h1{
 font-size: 55px;
   }
   p{
     font-size: 31px;
-  }
+    margin-left: 8vw;
+  } */
   
 }
 
@@ -250,6 +256,7 @@ font-size: 55px;
     float: left;
     padding-top: 8%;
   }
+
   .nav-center{
     display: inline-block;
     top: 3%;
@@ -260,18 +267,20 @@ font-size: 55px;
   a{
     padding:0;
   }
+
   .activeProfile .text{
     visibility: visible;
     font-size: 11px;
   }
+
   .skillsIcon{
     display: none;
   }
-  /* .skillsContainer{
-    height: 5vh;
-  } */
-}
 
+  p{
+  margin-left: 5vh;
+  }
+}
 
 @media screen and (max-width:414px){
   
@@ -279,14 +288,15 @@ font-size: 55px;
     font-size: 8px;
     margin-top: 2%;
   }
-  .headerPaigeIcon{
+  /* .headerPaigeIcon{
     width: 20vw;
-  }
+    height: 15vh;
+  } */
   
   .item{
-    height: 2vh;
+    font-size: 1.2rem;
+    height: 1.8rem;
   }
-  
 }
 
 
