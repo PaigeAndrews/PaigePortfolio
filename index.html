@@ -17,52 +17,45 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
   </head>  
 <body>
-  <div class="container">
-    <div class="nav-bar">
-      <div class="nav-center">
-        <a class="activeProfile" href="#"><img src="images/skills.png" alt="skills icon" class="skillsIcon"><div class="text">Skills</div></a> 
-        <a class="activeProfile" href="#"><img src="images/girl.png" alt="about me icon" class="skillsIcon" id="girlIcon"><div class="text">About</div></a> 
-        <a class="activeProfile" href="#"><img src="images/projects.png" alt="my projects icon" class="skillsIcon"><div class="text">Projects</div></a> 
-        <a class="activeProfile" href="#"><img src="images/envelope.png" alt="contact me icon" class="skillsIcon"><div class="text">Contact</div></a>
-      </div>
-    </div>
 
+    <div class="container">
+      <div class="nav-bar">
+        <div class="nav-center">
+          <a class="activeProfile" href="#sectionContact"><img src="images/envelope.png" alt="contact me icon" class="skillsIcon"><div class="text">Contact</div></a>
+          <a class="activeProfile" href="#sectionSkills"><img src="images/skills.png" alt="skills icon" class="skillsIcon"><div class="text">Skills</div></a> 
+          <a class="activeProfile" href="#"><img src="images/girl.png" alt="about me icon" class="skillsIcon" id="girlIcon"><div class="text">About</div></a> 
+          <a class="activeProfile" href="#"><img src="images/projects.png" alt="my projects icon" class="skillsIcon"><div class="text">Projects</div></a> 
+        </div>
+      </div>
     
 
-    <div class="headerMeContainer">
+    <div class="headerMeContainer" id="sectionContact">
       <div class="centerContent">
-      <img src="images/paige.png" class="headerPaigeIcon">
-      
-      <h1>Paige Andrews</h1>
-      <div class="inline">
-        <img src="images/in.png" class="socialIcons">
-        <img src="images/github.png" class="socialIcons">
+        <img src="images/paige.png" class="headerPaigeIcon">
+        <h1>Paige Andrews</h1>
+        <div class="inline">
+          <img src="images/in.png" class="socialIcons">
+          <img src="images/github.png" class="socialIcons">
+        </div>
+        <p> Front-End Web Developer. I love design and all art types.</p>
+        <p> My passion is to create!</p>
       </div>
-      <p> Front-End Web Developer. I love design and all art types.</p>
-      <p> My passion is to create!</p>
-    </div>
     </div>
     <hr class="lineDivider">
 
-    <!-- <div>
-      <div><p class="animated zoomInDown">HTML</p></div>
-      <div><p class="animated zoomInDown">CSS</p></div>
-      <div><p class="animated zoomInDown">Javascript</p></div>
-    </div> -->
     
     
-        <div class="centerContent">
-            <h1 class="sectionHeader">My Skills</h1>
-            <div class="skillsContainer">
-          
+  <div class="centerContent" id="sectionSkills">
+    <h1 class="sectionHeader">My Skills</h1>
+    <div class="skillsContainer">    
       <div class="item" data-aos="zoom-in">HTML</div>
       <div class="item" data-aos="zoom-in">CSS</div>
       <div class="item" data-aos="zoom-in">Javascript</div>
@@ -79,5 +72,6 @@
 
   </div>
   <script src="script.js" defer></script>
+  
 </body>
 </html>

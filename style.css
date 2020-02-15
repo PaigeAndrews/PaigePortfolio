@@ -1,11 +1,13 @@
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
   background: linear-gradient(132deg, #080f5e, #522499, rgb(6, 5, 49), #62056a, rgb(54, 1, 1), rgb(16, 4, 43)
   );
   background-size: 400% 400%;
-  animation: BackgroundGradient 30s ease infinite;
+  animation: BackgroundGradient 20s ease infinite;
   font-family: 'Syncopate', sans-serif;
   color: white;
 }
@@ -19,7 +21,6 @@ body {
 .container{
   z-index: 1000;
   width: 100%;
-  /* height: 1000px; */
   height: 2500px;
   background-image: url("images/stars2.png");
   -webkit-background-size: cover;
@@ -33,11 +34,9 @@ body {
 .nav-bar {
   width: 8vw;
   height: 100%;
-  /* background-color: #555; */
   justify-content: center;
   position: fixed;
   z-index: 300;
-  /* overflow: hidden; */
   display: block;
   margin-right: 10px;
   align-items: center;
@@ -82,15 +81,10 @@ body {
 
 .text {
  position: relative;
- /* width: 1rem; */
- /* width: 15px; */
  height: auto;
  bottom:15px;
- /* left:0px; */
  visibility: hidden;
- /* font-size: 2.3vh; */
  font-size: 1rem;
- /* font-size: 1rem; */
  padding: 0.5rem;
 }
 
@@ -101,8 +95,6 @@ body {
  
 
 .skillsIcon{
-  /* height: 5vh;
-  width: auto; */
   height: 5vh;
   width: auto;
   padding-bottom:1.5vh;
@@ -116,8 +108,6 @@ body {
 
 .socialIcons{
   padding: 3px;
-  /* width: 3%;
-  height: auto; */
   height: 5vh;
   width: auto;
 }
@@ -131,22 +121,13 @@ body {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  /* padding-top: 20vh; */
-  /* position: absolute; */
-  
-  /* top: 40%; */
-  /* position: absolute; */
-  /* display: inline-block; */
 }
 
 .headerPaigeIcon{
   display: block;
   border-radius: 50%;
-  /* width: 15vw; */
   height: 20vh;
-    width: auto;
-  /* max-width: 205px; */
-  /* height: auto; */
+  width: auto;
   position: relative;
   border-width:5px;  
   border-style:double;
@@ -165,8 +146,6 @@ body {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* width: 100vw; */
-  /* height: 30vh; */
   text-align: center;
   padding-left: 10%;
   padding-right: 10%;
@@ -178,21 +157,15 @@ body {
 .item {
   border-color: white;
   border-style: none none solid solid;
-  /* display: inline; */
-  /* width: 15vw; */
   width: auto;
   height: 2.3rem;
   margin: 15px;
   margin-bottom: 3vw;
-  /* padding-top: 75px; */
   background: none;
   text-align: center;
   float:bottom;
   color: #FFF;
-  /* font-size: 1.7vw; */
   font-size: 1.8rem;
-  /* font-size: 1.4vw; */
-  
 }
 
 .item:hover{
@@ -215,12 +188,10 @@ body {
 }
 
 h1{
-/* font-size: 3vw; */
 font-size: 4vh;
 }
 
 p{
-  /* font-size: 1.7vw; */
   font-size: 2.3vh;
   margin-left: 10vw;
   margin-right: 5%;
@@ -240,20 +211,6 @@ p{
 
 
 
-
-
-
-@media screen and (min-width:1800px){
-  
-  /* h1{
-font-size: 55px;
-  }
-  p{
-    font-size: 31px;
-    margin-left: 8vw;
-  } */
-  
-}
 
 @media screen and (max-width:930px){
   .nav-bar {
@@ -282,7 +239,6 @@ font-size: 55px;
       font-size: 0.7rem;
       margin-left: 0.3rem;
       margin-top: 2%;
-    /* font-size: 11px; */
   }
   .activeProfile{
     margin-right: 20px;
@@ -297,23 +253,6 @@ font-size: 55px;
   }
 }
 
-@media screen and (max-width:414px){
-  
-   
-  /* .headerPaigeIcon{
-    width: 20vw;
-    height: 15vh;
-  } */
-  /* .activeProfile{
-    height: 1.2rem;
-    width: auto;
-  } */
-  /* .item{
-    font-size: 1.2rem;
-    height: 1.8rem;
-    padding-right: 20%;
-  } */
-}
 
 
 @media screen and (max-width:350px){
@@ -323,6 +262,6 @@ font-size: 55px;
   }
   .nav-bar a {
     padding: 4px;  
-}
+  }
 
 }
