@@ -171,7 +171,7 @@ body {
 .item:hover{
   background-color: rgba(44, 27, 75, 0.7);
   border-color: white;
-  border-style: solid solid solid solid;
+  /* border-style: solid solid solid solid; */
 }
 
 /* content used throughout page */
