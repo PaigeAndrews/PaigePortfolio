@@ -10,6 +10,13 @@ body {
   animation: BackgroundGradient 20s ease infinite;
   font-family: 'Syncopate', sans-serif;
   color: white;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 
 @keyframes BackgroundGradient {
@@ -63,7 +70,7 @@ body {
 
 .nav-bar a:hover {
   background-color:rgba(44, 27, 75, 0.7);
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
   
 }
 
@@ -123,6 +130,10 @@ body {
   height: 100vh;
 }
 
+#name{
+  letter-spacing: 2px;
+}
+
 .headerPaigeIcon{
   display: block;
   border-radius: 50%;
@@ -156,11 +167,12 @@ body {
 
 .item {
   border-color: white;
-  border-style: none none solid solid;
+  border-style: solid;
   width: auto;
-  height: 2.3rem;
+  height: auto;
   margin: 15px;
   margin-bottom: 3vw;
+  padding: 2%;
   background: none;
   text-align: center;
   float:bottom;
@@ -168,12 +180,16 @@ body {
   font-size: 1.8rem;
 }
 
-.item:hover{
-  background-color: rgba(44, 27, 75, 0.7);
-  border-color: white;
-  /* border-style: solid solid solid solid; */
+/* About Me Section */
+.explanationPara{
+  /* line-height: 1.35em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  margin-bottom: 40px; */
 }
-
+.alignLeft{
+  text-align: left;
+}
 /* content used throughout page */
 
 .centerContent{
@@ -188,7 +204,9 @@ body {
 }
 
 h1{
-font-size: 4vh;
+  font-size: 4vh;
+  margin-left: 10vw;
+  margin-right: 5%;
 }
 
 p{
@@ -209,16 +227,74 @@ p{
   margin-bottom: 10%;
 }
 
-.noselect {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
+
+
+
+/* @media screen and (max-width:930px){
+  .nav-bar {
+    margin: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: rgba(0 ,0 ,0, 0.8);
+    padding-bottom: 3%;
+  }
+
+  .nav-bar a{
+    float: left;
+    padding-top: 8%;
+  }
+
+  .nav-center{
+    width: 100%;
+    height: auto;
+    
+    top: 0;
+    -ms-transform: none; 
+    transform: none;
+  }
+
+
+  .text{
+    visibility: visible;
+      font-size: 0.7rem;
+      margin-left: 0.3rem;
+      margin-top: 2%;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      cursor: default;
+  }
+  a.activeProfile{
+    margin-right: 20px;
+    visibility: hidden;
+  }
+
+  .skillsIcon{
+    display: none;
+  }
+
+  p{
+  margin-left: 5vh;
+  }
 }
 
+
+
+@media screen and (max-width:350px){
+  
+  .text{
+    font-size: 0.5rem;
+  }
+  .nav-bar a {
+    margin-top: 3%;
+    padding: 4px;  
+  }
+
+} */
 
 @media screen and (max-width:930px){
   .nav-bar {
@@ -247,14 +323,6 @@ p{
       font-size: 0.7rem;
       margin-left: 0.3rem;
       margin-top: 2%;
-      -webkit-tap-highlight-color: transparent;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      cursor: default;
   }
   a.activeProfile{
     margin-right: 20px;
