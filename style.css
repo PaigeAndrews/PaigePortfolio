@@ -225,6 +225,7 @@ body {
 
 .sectionHeader{
   /* margin-bottom: 5vh; */
+  letter-spacing: 2px;
 }
 
 .centerContent{
@@ -263,107 +264,57 @@ p{
   /* margin-left: 20%; */
 }
 
-
-
-
-/* @media screen and (max-width:930px){
-  .nav-bar {
-    margin: 0;
-    width: 100%;
-    height: 8vh;
-    background-color: rgba(0 ,0 ,0, 0.8);
-    padding-bottom: 3%;
-  }
-
-  .nav-bar a{
-    float: left;
-    padding-top: 8%;
-  }
-
-  .nav-center{
-    width: 100%;
-    height: auto;
-    
-    top: 0;
-    -ms-transform: none; 
-    transform: none;
-  }
-
-
-  .text{
-    visibility: visible;
-      font-size: 0.7rem;
-      margin-left: 0.3rem;
-      margin-top: 2%;
-      -webkit-tap-highlight-color: transparent;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      cursor: default;
-  }
-  a.activeProfile{
-    margin-right: 20px;
-    visibility: hidden;
-  }
-
-  .skillsIcon{
-    display: none;
-  }
-
-  p{
-  margin-left: 5vh;
-  }
+.nav-bar2{
+  display: none;
 }
 
 
 
-@media screen and (max-width:350px){
-  
-  .text{
-    font-size: 0.5rem;
-  }
-  .nav-bar a {
-    margin-top: 3%;
-    padding: 4px;  
-  }
-
-} */
 
 @media screen and (max-width:930px){
-  .nav-bar {
+  .nav-bar2 {
     margin: 0;
-    width: 100%;
-    /* margin:0 auto; */
-    height: 8vh;
-    background-color: rgba(0 ,0 ,0, 0.8);
-    padding-bottom: 3%;
+   
+    
+    display: inline;
+    /* padding-bottom: 3%; */
     /* text-align:center; */
   }
 
-  .nav-bar a{
-    float: left;
-    padding-top: 8%;
-   
-  }
-
-  .nav-center{
-    display: inline-block;
+  .nav{
+    z-index: 3000;
+    position: fixed; 
     top: 0;
-    -ms-transform: none; 
-    transform: none;
+    background-color: rgba(0 ,0 ,0, 0.8);
     width: 100%;
+    /* margin:0 auto; */
+    height: 8vh;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
   }
 
+  .nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+}
 
+.nav-center{
+  display:none;
+}
 
   .text{
+    padding-top: 4vh;
     visibility: visible;
       font-size: 0.7rem;
       margin-left: 0.3rem;
       margin-top: 2%;
+      text-decoration: none;
+      color: white;
   }
   a.activeProfile{
     margin-right: 20px;
@@ -377,12 +328,39 @@ p{
   p{
   margin-left: 5vh;
   }
+  .projectContainer{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    /* padding-right: 10%;
+    padding-bottom: 0; */
+    overflow-x: hidden;
+  }
+  
+  #projectTitle{
+    margin-top: 12%;
+  }
+  
+  
+  .projectImages{
+    width: 65%;
+    height: auto;
+    margin: 2%;
+    border-width:5px;  
+    border-style:double;
+    padding: 1.5%;
+  }
+  
 }
 
 
 
 @media screen and (max-width:350px){
-  
+ 
   .text{
     font-size: 0.5rem;
   }
@@ -390,4 +368,16 @@ p{
     padding: 4px;  
   }
 
+}
+
+
+@media screen and (max-width:277px){
+  .nav{
+    height: 20vh;
+  }
+  .text{
+    margin-top: 0;
+    padding-top: 2vh;
+    height: 1rem;
+  }
 }
