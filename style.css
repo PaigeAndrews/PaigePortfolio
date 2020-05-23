@@ -4,10 +4,13 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(132deg, #080f5e, #522499, rgb(6, 5, 49), #62056a, rgb(54, 1, 1), rgb(16, 4, 43)
-  );
+  background: linear-gradient(132deg, #080f5e, #522499, rgb(6, 5, 49), #62056a, rgb(54, 1, 1), rgb(16, 4, 43));
   background-size: 400% 400%;
   animation: BackgroundGradient 20s ease infinite;
+  -webkit-animation: BackgroundGradient 20s ease infinite;
+  -moz-animation: BackgroundGradient 20s ease infinite;
+  -o-animation: BackgroundGradient 20s ease infinite;
+  -ms-animation: BackgroundGradient 20s ease infinite;
   font-family: 'Syncopate', sans-serif;
   color: white;
   -webkit-touch-callout: none;
@@ -20,6 +23,26 @@ body {
 }
 
 @keyframes BackgroundGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+@-webkit-keyframes BackgroundGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+@-moz-keyframes BackgroundGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+@-ms-keyframes BackgroundGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+@-o-keyframes BackgroundGradient {
   0% {background-position: 0% 50%;}
   50% {background-position: 100% 50%;}
   100% {background-position: 0% 50%;}
@@ -220,16 +243,6 @@ body {
   border-style:double;
   padding: 1.5%;
   position: relative;
-  /* background-color: rgba(48, 48, 48, 0.6); */
-}
-.layer{
-  position: absolute;
-  background-color: rgba(85, 85, 85, 0.6);
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: auto;
-    z-index: 1000;
 }
 
 .projectButton {
@@ -245,18 +258,20 @@ body {
   margin: auto;
   padding: .5em 1.5em;
 }
+
 .projectThumbnailContainer{
    position: relative;
    width:50%;
 }
+
 .projectThumbnailContainer .btn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  color: #555;
-  background-color: white;
+  /* color: #555;
+  background-color: white; */
   font-weight: bold;
   font-size: 16px;
   padding: 12px 24px;
@@ -264,8 +279,28 @@ body {
   cursor: pointer;
 }
 
-.projectThumbnailContainer .btn:hover {
-  background-color: black;
+.btn{
+  background-image: linear-gradient(132deg, #080f5e, #522499, rgb(6, 5, 49), #62056a, rgb(54, 1, 1), rgb(16, 4, 43));
+  color: white;
+  animation: btnGradient 20s ease infinite;
+  background-size: 300% 300%;
+}
+
+.btn:hover {
+  background: white;
+  color: #555;
+  color: linear-gradient(132deg, #080f5e, #522499, rgb(6, 5, 49), #62056a, rgb(54, 1, 1), rgb(16, 4, 43));
+  animation: btnGradient 20s ease infinite;
+  background-size: 300% 300%;
+  transition: 0.3s;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+@keyframes btnGradient { 
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
 }
 
 
