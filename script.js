@@ -28,10 +28,10 @@ $(document).ready(function(){
 });
 
 
-btn1 = document.getElementById("1");
-btn2 = document.getElementById("2");
-btn3 = document.getElementById("3");
-btn4 = document.getElementById("4");
+pigButton = document.getElementById("pigButton");
+gamingButton = document.getElementById("gamingButton");
+animalButton = document.getElementById("animalButton");
+hangmanButton = document.getElementById("hangmanButton");
 
 btn1.addEventListener("click", function(){
   
