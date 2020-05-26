@@ -318,6 +318,10 @@ body {
   height: 380%;
 }
 
+#projectDetailContainer{
+  width: 100%;
+  height: auto;
+}
 
 
 /* .btn:hover {
