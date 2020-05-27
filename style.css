@@ -175,6 +175,10 @@ body {
   border-style:double;
 }
 
+#resumeLink{
+ color: rgb(77, 77, 250);
+ font-weight: bold;
+}
 
 /* Skills Section */
 
@@ -360,9 +364,13 @@ body {
   min-height: 100vh;
 }
 
+a{
+  text-decoration: none; 
+}
+
 h1{
   font-size: 4vh;
-  margin-left: 10vw;
+  margin-left: 8vw;
   margin-right: 5%;
 }
 
