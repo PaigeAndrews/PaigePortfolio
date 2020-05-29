@@ -36,25 +36,49 @@ projectDetailContainer = document.getElementById("projectDetail");
 projectDetailTitle = document.getElementById("projectDetailTitle");
 projectDetailImage = document.getElementById("projectDetailImage");
 gitProject = document.getElementById("gitProject");
+sourceCodeLink = document.getElementById("sourceCode");
+liveSiteLink = document.getElementById("liveSite");
 
 // btn1.addEventListener("click", function(){
   
 // })
 
-arrIds = [
+let arrIds = [
   pigButton,
   gamingButton,
   animalButton,
   hangmanButton
 ]
 
-projectTitle = [
+let projectTitle = [
   "Dice Pige Game",
   "React Game Search",
   "Animal Compatibility",
   "Halloween Hangman"
 ]
-projectImage =["images/pigFullImage.png"]
+let projectImage =[
+  "images/pigFullImage.png", 
+  "images/gameScreenShot.png", 
+  "images/animalscreenShot.png",
+  "images/hangmanScreenshot.png"
+];
+let sourceCodeLinkArray = [
+  "https://github.com/PaigeAndrews/Pig-Game", 
+  "https://github.com/PaigeAndrews/React-Games-Search",
+  "https://github.com/PaigeAndrews/Animal-Compatibility",
+  "https://github.com/PaigeAndrews/Halloween-Hangman"
+  ]; 
+let liveSiteLinkArray = [
+  "https://paigeandrews.github.io/Pig-Game/", 
+  "https://paigeandrews.github.io/React-Games-Search/",
+  "https://paigeandrews.github.io/Animal-Compatibility/",
+  "https://paigeandrews.github.io/Halloween-Hangman/"
+ ];
+
+let pigImages = ["images/pig2.png","images/pig3.png", "images/pig4.png"];
+let reactGameImages = ["images/game2.png","images/game3.png","images/game4.png"];
+let animalImages = ["images/animal2.png","images/animal3.png","images/animal4.png"];
+let hangmanImages = ["images/hangman2.png","images/hangman3.png","images/hangman4.png"];
 
 
 let number = 0;
@@ -68,7 +92,7 @@ for (let h=0; h<4; h++){
       projectDetailImage.removeChild(projectDetailImage.childNodes[0]);
     }
     
-    gitProject.style.display = "inline-block";
+    gitProject.style.display = "block";
     // animalParagraphRightImage.style.display = "inline-block";
 
     // let textnodeIds = document.createTextNode(arrIds[h])
@@ -77,7 +101,8 @@ for (let h=0; h<4; h++){
     let textnodeImage = document.createTextNode(projectImage[h]);
 
     projectDetailImage.src = projectImage[h];
-
+    sourceCodeLink.href = sourceCodeLinkArray[h];
+    liveSiteLink.href = liveSiteLinkArray[h];
 
     // arrIds[h].appendChild(textnodeIds);
     projectDetailTitle.appendChild(textnodeTitle);
@@ -89,3 +114,5 @@ for (let h=0; h<4; h++){
 
   })
 } 
+
+
