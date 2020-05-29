@@ -329,9 +329,12 @@ body {
 
 #projectDetailImage{
   width: 40%;
-  height: 30%;
+  height: 40%;
 }
 
+#gitProject{
+  display: none;
+}
 
 /* .btn:hover {
   background: white;

@@ -35,6 +35,7 @@ hangmanButton = document.getElementById("hangmanButton");
 projectDetailContainer = document.getElementById("projectDetail");
 projectDetailTitle = document.getElementById("projectDetailTitle");
 projectDetailImage = document.getElementById("projectDetailImage");
+gitProject = document.getElementById("gitProject");
 
 // btn1.addEventListener("click", function(){
   
@@ -67,15 +68,15 @@ for (let h=0; h<4; h++){
       projectDetailImage.removeChild(projectDetailImage.childNodes[0]);
     }
     
-    // animalParagraph.style.display = "inline-block";
+    gitProject.style.display = "inline-block";
     // animalParagraphRightImage.style.display = "inline-block";
 
-    let textnodeIds = document.createTextNode(arrIds[h])
+    // let textnodeIds = document.createTextNode(arrIds[h])
     let textnodeTitle = document.createTextNode(projectTitle[h]);
     // let textnodeDes = document.createTextNode(arrDescription[h]);
-    let textnodeImage = document.createTextNode(projectDetailImage[h]);
+    let textnodeImage = document.createTextNode(projectImage[h]);
 
-    // animalParagraphRightImage.src = descriptionImages[h];
+    projectDetailImage.src = projectImage[h];
 
 
     // arrIds[h].appendChild(textnodeIds);
