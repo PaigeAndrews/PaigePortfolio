@@ -53,7 +53,7 @@ projectTitle = [
   "Animal Compatibility",
   "Halloween Hangman"
 ]
-projectImage =[]
+projectImage =["images/pigFullImage.png"]
 
 
 let number = 0;
@@ -64,7 +64,7 @@ for (let h=0; h<4; h++){
     if (number > 0){
       projectDetailTitle.removeChild(projectDetailTitle.childNodes[0]);
       // animalParagraph.removeChild(animalParagraph.childNodes[0]);
-      // animalParagraphRightImage.removeChild(animalParagraphRightImage.childNodes[0]);
+      projectDetailImage.removeChild(projectDetailImage.childNodes[0]);
     }
     
     // animalParagraph.style.display = "inline-block";
@@ -73,7 +73,7 @@ for (let h=0; h<4; h++){
     let textnodeIds = document.createTextNode(arrIds[h])
     let textnodeTitle = document.createTextNode(projectTitle[h]);
     // let textnodeDes = document.createTextNode(arrDescription[h]);
-    // let textnodeImage = document.createTextNode(descriptionImages[h]);
+    let textnodeImage = document.createTextNode(projectDetailImage[h]);
 
     // animalParagraphRightImage.src = descriptionImages[h];
 
@@ -81,7 +81,7 @@ for (let h=0; h<4; h++){
     // arrIds[h].appendChild(textnodeIds);
     projectDetailTitle.appendChild(textnodeTitle);
     // animalParagraph.appendChild(textnodeDes);
-    // animalParagraphRightImage.appendChild(textnodeImage);
+    projectDetailImage.appendChild(textnodeImage);
 
     projectDetailTitle.scrollIntoView()
     number++

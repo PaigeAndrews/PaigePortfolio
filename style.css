@@ -327,6 +327,11 @@ body {
   height: auto;
 }
 
+#projectDetailImage{
+  width: 40%;
+  height: 30%;
+}
+
 
 /* .btn:hover {
   background: white;
