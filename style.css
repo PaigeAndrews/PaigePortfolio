@@ -322,6 +322,8 @@ body {
   height: 380%;
 }
 
+/* Project Detail Section */
+
 #projectDetailContainer{
   width: 80%;
   height: auto;
@@ -345,9 +347,20 @@ body {
 
 #projectLinkContainer{
   display: inline-block;
+  width: 100%;
+  justify-content: center;
 }
 .projectLink{
  color: blue;
+ margin: 5%;
+}
+
+#sourceCode{
+
+}
+
+#liveSite{
+
 }
 /* .btn:hover {
   background: white;
