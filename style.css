@@ -217,6 +217,12 @@ body {
 .alignLeft{
   text-align: left;
   width: 100%;
+  letter-spacing: 1px;
+}
+
+#paigeArt{
+  width: 65vw;
+  height: auto;
 }
 
 /* Projects Section */
@@ -351,9 +357,17 @@ body {
   width: 100%;
   justify-content: center;
 }
+
 .projectLink{
  color: blue;
+ font-weight: bold;
  margin: 5%;
+}
+
+#projectParagraph{
+  padding: 3%;
+  letter-spacing: 1px;
+  text-align: left;
 }
 
 #sourceCode{

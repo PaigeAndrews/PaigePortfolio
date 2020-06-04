@@ -28,16 +28,17 @@ $(document).ready(function(){
 });
 
 
-pigButton = document.getElementById("pigButton");
-gamingButton = document.getElementById("gamingButton");
-animalButton = document.getElementById("animalButton");
-hangmanButton = document.getElementById("hangmanButton");
-projectDetailContainer = document.getElementById("projectDetail");
-projectDetailTitle = document.getElementById("projectDetailTitle");
-projectDetailImage = document.getElementById("projectDetailImage");
-gitProject = document.getElementById("gitProject");
-sourceCodeLink = document.getElementById("sourceCode");
-liveSiteLink = document.getElementById("liveSite");
+let pigButton = document.getElementById("pigButton");
+let gamingButton = document.getElementById("gamingButton");
+let animalButton = document.getElementById("animalButton");
+let hangmanButton = document.getElementById("hangmanButton");
+let projectDetailContainer = document.getElementById("projectDetail");
+let projectDetailTitle = document.getElementById("projectDetailTitle");
+let projectDetailImage = document.getElementById("projectDetailImage");
+let gitProject = document.getElementById("gitProject");
+let sourceCodeLink = document.getElementById("sourceCode");
+let liveSiteLink = document.getElementById("liveSite");
+let projectParagraph = document.getElementById("projectParagraph");
 
 // btn1.addEventListener("click", function(){
   
@@ -75,6 +76,13 @@ let liveSiteLinkArray = [
   "https://paigeandrews.github.io/Halloween-Hangman/"
  ];
 
+ let projectParagraphArray = [
+  "Made in HTML, CSS, and JavaScript, this allows the user to play the classic dice game 'Pig' against the computer. When the user takes their turn, the score is calculated and displayed on screen. During the computer's turn, all the dice images are on a timer to help the player better visualize what the computer had rolled for that turn.",
+  "Built using React technologies; Hooks, Router, Slideshow, and Reveal. Uses the RAWG API to fetch JSON data on over 355,000 games. This site allows users to search for games and view information about each, including: title, a brief description, developer, genres, platforms available, and a video trailer.",
+  "Made in HTML, CSS, and JavaScript, this site helps users decide which sort of animals to adopt to best suit their lifestyle needs by filling out a colorful form. All text questions, choices, and color schemes are stored in different arrays that change the form after each question is answered. After completion, this displays specific information about the animals you may be compatible with.",
+  "A Halloween themed hangman game made in HTML, CSS, and Javascript. The user selects either easy, medium or hard. A word of appropriate difficulty is chosen randomly. The user has 6 lives to guess the word, with each correct guess filling out blanks and each incorrect guess decrementing remaining lives."
+ ];
+
 let pigImages = ["images/pig2.png","images/pig3.png", "images/pig4.png"];
 let reactGameImages = ["images/game2.png","images/game3.png","images/game4.png"];
 let animalImages = ["images/animal2.png","images/animal3.png","images/animal4.png"];
@@ -88,7 +96,7 @@ for (let h=0; h<4; h++){
 
     if (number > 0){
       projectDetailTitle.removeChild(projectDetailTitle.childNodes[0]);
-      // animalParagraph.removeChild(animalParagraph.childNodes[0]);
+      projectParagraph.removeChild(projectParagraph.childNodes[0]);
       projectDetailImage.removeChild(projectDetailImage.childNodes[0]);
     }
     
@@ -97,7 +105,7 @@ for (let h=0; h<4; h++){
 
     // let textnodeIds = document.createTextNode(arrIds[h])
     let textnodeTitle = document.createTextNode(projectTitle[h]);
-    // let textnodeDes = document.createTextNode(arrDescription[h]);
+    let textnodePara = document.createTextNode(projectParagraphArray[h]);
     let textnodeImage = document.createTextNode(projectImage[h]);
 
     projectDetailImage.src = projectImage[h];
@@ -106,7 +114,7 @@ for (let h=0; h<4; h++){
 
     // arrIds[h].appendChild(textnodeIds);
     projectDetailTitle.appendChild(textnodeTitle);
-    // animalParagraph.appendChild(textnodeDes);
+    projectParagraph.appendChild(textnodePara);
     projectDetailImage.appendChild(textnodeImage);
 
     projectDetailTitle.scrollIntoView()
