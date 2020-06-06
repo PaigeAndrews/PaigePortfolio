@@ -215,15 +215,39 @@ body {
 /* About Me Section */
 
 .alignLeft{
-  text-align: left;
-  width: 100%;
+  /* text-align: left; */
+  /* width: 100%; */
   letter-spacing: 1px;
+  font-size: 16px;
 }
 
 #paigeArt{
-  width: 65vw;
+  /* float: left; */
+  width: 30%;
   height: auto;
+ float: left;
 }
+
+.center{
+  text-align: center;
+}
+
+.aboutMeContent{
+  margin-left: 80%;
+  
+  display:inline;
+  justify-content: center;
+  /* text-align: center; */
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 0;
+  overflow-x: hidden;
+}
+
+/* .aboutMe{
+  width: 20%;
+  margin: 0;
+} */
 
 /* Projects Section */
 
@@ -514,8 +538,6 @@ p{
     justify-content: center;
     text-align: center;
     padding: 5%;
-    /* padding-right: 10%;
-    padding-bottom: 0; */
     overflow-x: hidden;
   }
   
