@@ -370,6 +370,9 @@ body {
   height: 50%;
   display: block;
   padding: 3% 5% 5% 5%;
+  border-width:5px;  
+  border-style:double;
+  padding: 1.5%;
 }
 
 #gitProject{
@@ -386,6 +389,7 @@ body {
  color: blue;
  font-weight: bold;
  margin: 5%;
+ margin-bottom: 8%;
 }
 
 #projectParagraph{
