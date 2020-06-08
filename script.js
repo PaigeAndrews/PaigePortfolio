@@ -18,7 +18,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      },function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -39,7 +39,8 @@ let gitProject = document.getElementById("gitProject");
 let sourceCodeLink = document.getElementById("sourceCode");
 let liveSiteLink = document.getElementById("liveSite");
 let projectParagraph = document.getElementById("projectParagraph");
-
+let backToProjectsButton = document.getElementById("backToProjectsButton");
+let sectionProject = document.getElementById("sectionProject");
 // btn1.addEventListener("click", function(){
   
 // })
@@ -123,4 +124,8 @@ for (let h=0; h<4; h++){
   })
 } 
 
+backToProjectsButton.addEventListener("click", function(){
+  sectionProject.scrollIntoView()
+  setTimeout(function(){ gitProject.style.display = "none" }, 1000);
+})
 

@@ -389,7 +389,6 @@ body {
  color: blue;
  font-weight: bold;
  margin: 5%;
- margin-bottom: 8%;
 }
 
 #projectParagraph{
@@ -399,12 +398,15 @@ body {
 }
 
 #sourceCode{
+  margin-bottom: 8%;
 
 }
 
 #liveSite{
 
 }
+
+
 /* .btn:hover {
   background: white;
   color: #555;
