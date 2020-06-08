@@ -219,6 +219,7 @@ body {
   /* width: 100%; */
   letter-spacing: 1px;
   font-size: 16px;
+  padding-bottom: 2%;
 }
 
 #paigeArt{
@@ -226,6 +227,10 @@ body {
   width: 30%;
   height: auto;
  float: left;
+ border-width:5px;  
+ border-style:double;
+ border-color: white;
+ margin: 0 5% 5% 5%;
 }
 
 .center{
@@ -242,6 +247,12 @@ body {
   padding-right: 10%;
   padding-bottom: 0;
   overflow-x: hidden;
+}
+
+.aboutMeContainer{
+  width: 100%;
+  height: auto;
+  min-height: 80vh;
 }
 
 /* .aboutMe{
@@ -536,31 +547,33 @@ p{
   p{
   margin-left: 5vh;
   }
-  .projectContainer{
-    width: 80%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    padding: 5%;
-    overflow-x: hidden;
-  }
-  
+ 
   #projectTitle{
     margin-top: 12%;
   }
   
   
   .projectImages{
-    width: 65%;
+    width: 45%;
     height: auto;
     margin: 2%;
     border-width:5px;  
     border-style:double;
     padding: 1.5%;
   }
-  
+  .projectContainer{
+    width: 90%;
+    display: block;
+    flex-wrap: none;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    overflow-x: hidden;
+    overflow: hidden;
+  }
+  .projectThumbnailContainer{
+    width: auto;
+  }
 }
 
 

@@ -2,30 +2,6 @@ AOS.init({
   duration: 1200,
 })
 
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      },function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
 
 
 let pigButton = document.getElementById("pigButton");
@@ -40,10 +16,33 @@ let sourceCodeLink = document.getElementById("sourceCode");
 let liveSiteLink = document.getElementById("liveSite");
 let projectParagraph = document.getElementById("projectParagraph");
 let backToProjectsButton = document.getElementById("backToProjectsButton");
-let sectionProject = document.getElementById("sectionProject");
-// btn1.addEventListener("click", function(){
-  
-// })
+let sectionContact = document.getElementById("sectionContact");
+let sectionSkills = document.getElementById("sectionSkills");
+let sectionAbout = document.getElementById("sectionAbout");
+let sectionProjects = document.getElementById("sectionProject");
+let liContact = document.getElementById("liContact");
+let liSkills = document.getElementById("liSkills");
+let liAbout = document.getElementById("liAbout");
+let liProjects = document.getElementById("liProjects");
+
+
+
+liContact.addEventListener("click", function(){
+  sectionContact.scrollIntoView();
+})
+
+liSkills.addEventListener("click", function(){
+  sectionSkills.scrollIntoView();
+})
+
+liAbout.addEventListener("click", function(){
+  sectionAbout.scrollIntoView();
+})
+
+liProjects.addEventListener("click", function(){
+  sectionProjects.scrollIntoView();
+})
+
 
 let arrIds = [
   pigButton,

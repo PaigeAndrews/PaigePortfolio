@@ -31,10 +31,11 @@
     <!-- Navbar section -->
     <div class="nav-bar">
       <div class="nav-center">
-        <a class="activeProfile" href="#sectionContact"><img src="images/envelope.png" alt="contact me icon" class="skillsIcon"><div class="text">Contact</div></a>
-        <a class="activeProfile" href="#sectionSkills"><img src="images/skills.png" alt="skills icon" class="skillsIcon"><div class="text">Skills</div></a>
-        <a class="activeProfile" href="#sectionAbout"><img src="images/girl.png" alt="about me icon" class="skillsIcon" id="girlIcon"><div class="text">About</div></a> 
-        <a class="activeProfile" href="#sectionProject"><img src="images/projects.png" alt="my projects icon" class="skillsIcon"><div class="text">Projects</div></a>
+        <a class="activeProfile" id="liContact"><img src="images/envelope.png" alt="contact me icon" class="skillsIcon"><div class="text">Contact</div></a>
+        <a class="activeProfile" id="liSkills"><img src="images/skills.png" alt="skills icon" class="skillsIcon"><div class="text">Skills</div></a>
+        <a class="activeProfile" id="liAbout"><img src="images/girl.png" alt="about me icon" class="skillsIcon" id="girlIcon"><div class="text">About</div></a> 
+        <a class="activeProfile" id="liProjects"><img src="images/projects.png" alt="my projects icon" class="skillsIcon"><div class="text">Projects</div></a>
+   
       </div>
     </div>
 
@@ -42,10 +43,10 @@
     <!-- Navbar section -->
     <div class="nav-bar2">
         <ul class="nav">
-          <li><a class="activeProfile" href="#sectionContact"><img src="images/envelope.png" alt="contact me icon" class="skillsIcon"><div class="text">Contact</div></a></li>
-          <li><a class="activeProfile" href="#sectionSkills"><img src="images/skills.png" alt="skills icon" class="skillsIcon"><div class="text">Skills</div></a></li> 
-          <li><a class="activeProfile" href="#sectionAbout"><img src="images/girl.png" alt="about me icon" class="skillsIcon" id="girlIcon"><div class="text">About</div></a></li> 
-          <li><a class="activeProfile" href="#sectionProject"><img src="images/projects.png" alt="my projects icon" class="skillsIcon"><div class="text">Projects</div></a> </li>
+          <li><a class="activeProfile" id="liContact"><img src="images/envelope.png" alt="contact me icon" class="skillsIcon"><div class="text">Contact</div></a></li>
+          <li><a class="activeProfile" id="liSkills"><img src="images/skills.png" alt="skills icon" class="skillsIcon"><div class="text">Skills</div></a></li> 
+          <li><a class="activeProfile" id="liAbout"><img src="images/girl.png" alt="about me icon" class="skillsIcon" id="girlIcon"><div class="text">About</div></a></li> 
+          <li><a class="activeProfile" id="liProjects"><img src="images/projects.png" alt="my projects icon" class="skillsIcon"><div class="text">Projects</div></a> </li>
         </ul>
       </div>
       
@@ -88,13 +89,14 @@
         <div class="item" data-aos="zoom-in">Fine Arts</div>
       </div>
     </div>
-    <hr class="lineDivider">
+    <hr class="lineDivider" id="sectionAbout">
 
       <!-- About me section -->
-      <div class="center" id="sectionAbout">
-      <h1 class="sectionHeader">About Me</h1>
-    </div>
-    <div class="aboutMeContent">
+    <div class="aboutMeContainer">
+      <div class="center">
+        <h1 class="sectionHeader">About Me</h1>
+      </div>
+      <div class="aboutMeContent">
       <!-- <h1 class="sectionHeader">About Me</h1> -->
       <!-- <div id="paigeArtContainer"> -->
         <p class="alignLeft" data-aos="zoom-in"><img src="images/pA3.png" id="paigeArt" data-aos="zoom-in">
@@ -107,12 +109,13 @@
           <p class="alignLeft" data-aos="zoom-in">When I'm not coding or pushing pixels, you'll find me playing videogames, and volunteering to help local animals.</p>
       <!-- </div> -->
     </div>
-    <hr class="lineDivider">
+  </div>
+    <hr class="lineDivider" id="sectionProject">
 
 
       <!-- Projects section -->
     <!-- <div class="centerContent" id="sectionProject"> -->
-      <div class="center" id="sectionProject">
+      <div class="center">
         <h1 class="sectionHeader" id="projectTitle">Projects</h1>
        </div>
       <div class="projectContainer">
