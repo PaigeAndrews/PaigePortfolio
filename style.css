@@ -182,6 +182,9 @@ body {
 
 /* Skills Section */
 
+#mySkills{
+  padding-bottom: 3%;
+}
 
 .skillsContainer{
   width: 80%;
@@ -214,6 +217,11 @@ body {
 
 /* About Me Section */
 
+#aboutMe{
+  padding-bottom: 3%;
+  padding-top: 5%;
+}
+
 .alignLeft{
   /* text-align: left; */
   /* width: 100%; */
@@ -225,6 +233,7 @@ body {
 #paigeArt{
   /* float: left; */
   width: 30%;
+  min-width: 200px;
   height: auto;
  float: left;
  border-width:5px;  
@@ -252,7 +261,8 @@ body {
 .aboutMeContainer{
   width: 100%;
   height: auto;
-  min-height: 80vh;
+  min-height: 100vh;
+  /* padding-left: 3%; */
 }
 
 /* .aboutMe{
@@ -360,7 +370,8 @@ body {
 
 }
 .viewProjectButton:hover::before{
-  height: 380%;
+  /* height: 380%; */
+  height: 450%;
 }
 
 /* Project Detail Section */
@@ -384,6 +395,7 @@ body {
   border-width:5px;  
   border-style:double;
   padding: 1.5%;
+  margin-bottom: 2%;
 }
 
 #gitProject{
@@ -408,25 +420,6 @@ body {
   text-align: left;
 }
 
-#sourceCode{
-  margin-bottom: 8%;
-
-}
-
-#liveSite{
-
-}
-
-
-/* .btn:hover {
-  background: white;
-  color: #555;
-  color: linear-gradient(132deg, #080f5e, #522499, rgb(6, 5, 49), #62056a, rgb(54, 1, 1), rgb(16, 4, 43));
-  animation: btnGradient 20s ease infinite;
-  background-size: 300% 300%;
-  transition: 0.3s;
-} */
-
 @keyframes btnGradient { 
   0% { background-position: 0% 50% }
   50% { background-position: 100% 50% }
@@ -439,7 +432,6 @@ body {
 /* content used throughout page */
 
 .sectionHeader{
-  /* margin-bottom: 5vh; */
   letter-spacing: 2px;
 }
 
@@ -464,9 +456,14 @@ h1{
   margin-right: 5%;
 }
 
+h4{
+  font-weight:normal; 
+  margin: 1% 5% 1% 5%;
+}
+
 p{
   font-size: 2.3vh;
-  margin-left: 10vw;
+  margin-left: 12vw;
   margin-right: 5%;
 }
 
@@ -480,7 +477,6 @@ p{
   width: 40%;
   margin-top: 4%;
   margin-bottom: 4%;
-  /* margin-left: 20%; */
 }
 
 .nav-bar2{
@@ -492,12 +488,7 @@ p{
 
 @media screen and (max-width:930px){
   .nav-bar2 {
-    margin: 0;
-   
-    
     display: inline;
-    /* padding-bottom: 3%; */
-    /* text-align:center; */
   }
 
   .nav{
@@ -506,7 +497,6 @@ p{
     top: 0;
     background-color: rgba(0 ,0 ,0, 0.8);
     width: 100%;
-    /* margin:0 auto; */
     height: 8vh;
     list-style:none;
     margin:0;
@@ -516,15 +506,15 @@ p{
 
   .nav li{
     display:inline;
-}
-.nav a{
-    display:inline-block;
-    padding:10px;
-}
+  }
+  .nav a{
+      display:inline-block;
+      padding:10px;
+  }
 
-.nav-center{
-  display:none;
-}
+  .nav-center{
+    display:none;
+  }
 
   .text{
     padding-top: 4vh;
@@ -545,16 +535,16 @@ p{
   }
 
   p{
-  margin-left: 5vh;
+  /* margin-left: 5vh; */
+  margin-left: 5%;
   }
  
   #projectTitle{
     margin-top: 12%;
   }
   
-  
   .projectImages{
-    width: 45%;
+    width: 60%;
     height: auto;
     margin: 2%;
     border-width:5px;  
@@ -572,14 +562,39 @@ p{
     overflow: hidden;
   }
   .projectThumbnailContainer{
-    width: auto;
+    /* width: auto; */
+    width: 100%;
+  }
+  #projectDetailContainer{
+    width: 100%;
+    padding: 0;
   }
 }
 
+@media screen and (max-width: 439px){
+
+  #paigeArt{
+   float: none;
+   margin-right: 20%;
+   margin-left: 20%;
+  }
+  .lineDivider{
+    width: 80%;
+    margin-top: 4%;
+    margin-bottom: 8%;
+  }
+  .projectImages{
+    width: 70%;
+  }
+  
+}
 
 
 @media screen and (max-width:350px){
- 
+ #paigeArt{
+   margin-left: 10%;
+   margin-right: 10%;
+ }
   .text{
     font-size: 0.5rem;
   }
@@ -598,5 +613,11 @@ p{
     margin-top: 0;
     padding-top: 2vh;
     height: 1rem;
+  }
+  .projectImages{
+    width: 85%;
+  }
+  #paigeArt{
+    min-width: 100px;
   }
 }
