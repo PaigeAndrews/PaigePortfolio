@@ -20,28 +20,30 @@ let sectionContact = document.getElementById("sectionContact");
 let sectionSkills = document.getElementById("sectionSkills");
 let sectionAbout = document.getElementById("sectionAbout");
 let sectionProjects = document.getElementById("sectionProject");
-let liContact = document.getElementById("liContact");
-let liSkills = document.getElementById("liSkills");
-let liAbout = document.getElementById("liAbout");
-let liProjects = document.getElementById("liProjects");
+let navContact = document.getElementsByClassName("navContact");
+let navSkills = document.getElementsByClassName("navSkills");
+let navAbout = document.getElementsByClassName("navAbout");
+let navProjects = document.getElementsByClassName("navProjects");
 
-
-
-liContact.addEventListener("click", function(){
+for(let element of navContact){
+  element.addEventListener("click", function(){
   sectionContact.scrollIntoView();
-})
+})}
 
-liSkills.addEventListener("click", function(){
+for(let element of navSkills){
+  element.addEventListener("click", function(){
   sectionSkills.scrollIntoView();
-})
+})}
 
-liAbout.addEventListener("click", function(){
+for(let element of navAbout){
+  element.addEventListener("click", function(){
   sectionAbout.scrollIntoView();
-})
+})}
 
-liProjects.addEventListener("click", function(){
+for(let element of navProjects){
+  element.addEventListener("click", function(){
   sectionProjects.scrollIntoView();
-})
+})}
 
 
 let arrIds = [
