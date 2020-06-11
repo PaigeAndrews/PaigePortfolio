@@ -101,11 +101,8 @@ for (let h=0; h<4; h++){
       projectParagraph.removeChild(projectParagraph.childNodes[0]);
       projectDetailImage.removeChild(projectDetailImage.childNodes[0]);
     }
-    
     gitProject.style.display = "block";
-    // animalParagraphRightImage.style.display = "inline-block";
 
-    // let textnodeIds = document.createTextNode(arrIds[h])
     let textnodeTitle = document.createTextNode(projectTitle[h]);
     let textnodePara = document.createTextNode(projectParagraphArray[h]);
     let textnodeImage = document.createTextNode(projectImage[h]);
@@ -114,14 +111,12 @@ for (let h=0; h<4; h++){
     sourceCodeLink.href = sourceCodeLinkArray[h];
     liveSiteLink.href = liveSiteLinkArray[h];
 
-    // arrIds[h].appendChild(textnodeIds);
     projectDetailTitle.appendChild(textnodeTitle);
     projectParagraph.appendChild(textnodePara);
     projectDetailImage.appendChild(textnodeImage);
 
     projectDetailTitle.scrollIntoView()
     number++
-
   })
 } 
 
