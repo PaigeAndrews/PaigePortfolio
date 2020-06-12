@@ -24,6 +24,7 @@ let navContact = document.getElementsByClassName("navContact");
 let navSkills = document.getElementsByClassName("navSkills");
 let navAbout = document.getElementsByClassName("navAbout");
 let navProjects = document.getElementsByClassName("navProjects");
+let projectDetailView = document.getElementById("projectDetailView");
 
 for(let element of navContact){
   element.addEventListener("click", function(){
@@ -115,7 +116,7 @@ for (let h=0; h<4; h++){
     projectParagraph.appendChild(textnodePara);
     projectDetailImage.appendChild(textnodeImage);
 
-    projectDetailTitle.scrollIntoView()
+    projectDetailView.scrollIntoView()
     number++
   })
 } 

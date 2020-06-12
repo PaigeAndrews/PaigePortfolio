@@ -388,6 +388,10 @@ body {
   overflow-x: hidden;
 }
 
+#projectDetailTitle{
+  margin-bottom: 2em;
+}
+
 #projectDetailImage{
   width: 50%;
   height: 50%;
